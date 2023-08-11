@@ -8,13 +8,16 @@ const gameOverAudio= new Audio("gameOver.wav");
 const clickAudio = new Audio("btnPress.wav");
 const btnFlashAudio = new Audio("btnFlash.wav");
 // initial set up
-document.addEventListener("keypress", (event) => {
+function gameStart(){
     if (started == false) {
         started = true;
         console.log("game started");
         levelUp();
     }
-})
+}
+let startBtn = document.querySelector("#gameStart");
+startBtn.addEventListener("click",gameStart);
+document.addEventListener("keypress", gameStart);
 let h2 = document.querySelector("h2");
 
 const btnFlash = (btn, color) => {
@@ -66,7 +69,7 @@ function btnPress() {
     isMatch(userSeq.length - 1);
 }
 
-let allBtns = document.querySelectorAll(".btn");
+let allBtns = document.querySelectorAll(".btns");
 for (btn of allBtns) {
     btn.addEventListener("click", btnPress);
 }
