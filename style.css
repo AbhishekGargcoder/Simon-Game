@@ -65,12 +65,12 @@ span {
     font-weight: 900;
     margin-left: 7.5rem;
 }
-.btn{
+/* .btn{
     margin-left: 20px;
     width: 5rem;
-}
+} */
 @media(max-width : 535px) {
-    .btn {
+    .btns {
         height: 9.5rem;
         width: 8.5rem;
         border-radius: 20%;
@@ -80,7 +80,7 @@ span {
 }
 
 @media(max-width : 320px) {
-    .btn {
+    .btns {
         height: 4.5rem;
         width: 5rem;
         border-radius: 20%;
