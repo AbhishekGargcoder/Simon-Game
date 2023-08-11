@@ -1,46 +1,56 @@
-*{
+* {
     text-align: center;
     overflow: auto;
 }
-.btn-container{
+
+.btn-container {
     display: flex;
     justify-content: center;
 }
-.btn{
+
+.btns {
     height: 12.5rem;
     width: 12.5rem;
-    border-radius: 20%;
-    border: 0.65rem solid black;
+    border-radius: 15%;
+    border: 0.6em solid black;
     margin: 2.5rem;
 }
-.btn-1{
+
+.btn-1 {
     background-color: #d95980;
 }
-.btn-2{
-    background-color: #f99b45 ;
+
+.btn-2 {
+    background-color: #f99b45;
 }
-.btn-3{
+
+.btn-3 {
     background-color: #63aac0;
 }
-.btn-4{
+
+.btn-4 {
     background-color: #819ff9;
 }
-.flash{
+
+.flash {
     background-color: #ffffff;
 }
-.userFlash{
+
+.userFlash {
     background-color: green;
 }
-.gameOverFlash{
+
+.gameOverFlash {
     background-color: #ff0000;
 }
-.scoreDiv{
+
+.scoreDiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-span{
+span {
     color: #28a745;
     padding: 10px;
     font-size: 1.24rem;
@@ -48,9 +58,33 @@ span{
     border-radius: 5px;
     font-weight: 400;
 }
-.simonGame{
+
+.simonGame {
     width: 100%;
     font-size: 1.8rem;
     font-weight: 900;
     margin-left: 7.5rem;
+}
+.btn{
+    margin-left: 20px;
+    width: 5rem;
+}
+@media(max-width : 535px) {
+    .btn {
+        height: 9.5rem;
+        width: 8.5rem;
+        border-radius: 20%;
+        border: 0.5rem solid black;
+        margin: 0.5rem;
+    }
+}
+
+@media(max-width : 320px) {
+    .btn {
+        height: 4.5rem;
+        width: 5rem;
+        border-radius: 20%;
+        border: 0.5rem solid black;
+        margin: 0.3rem;
+    }
 }
