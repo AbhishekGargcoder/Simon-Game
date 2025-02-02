@@ -43,7 +43,7 @@ body{
 }
 
 .gameOverFlash {
-    background-color: #ff0000;
+    background-color: #ff0000 !important;
 }
 
 .game-name {
