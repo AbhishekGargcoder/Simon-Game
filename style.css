@@ -3,7 +3,7 @@
     overflow: auto;
 }
 body{
-    background-color: #F0E68C;
+    background-color: #F0E68C !important; 
 }
 .btn-container1 {
     display: flex;
