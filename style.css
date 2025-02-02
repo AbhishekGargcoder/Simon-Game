@@ -3,10 +3,10 @@
     overflow: auto;
 }
 
-.btn-container {
+.btn-container1 {
     display: flex;
     justify-content: center;
-}
+}  
 
 .btns {
     height: 12.5rem;
@@ -44,31 +44,42 @@
     background-color: #ff0000;
 }
 
-.scoreDiv {
+.game-name {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-span {
-    color: #28a745;
-    padding: 10px;
-    font-size: 1.24rem;
-    border: 2px solid #28a745;
-    border-radius: 5px;
-    font-weight: 400;
-}
-
-.simonGame {
     width: 100%;
-    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+
+}
+.highest-score-div{
+    font-weight: 500;
+}
+span {
+    padding: 10px;
+    font-size: 1.75rem;
+    border-radius: 5px;
+}
+.play-again-title {
+    font-size: 1.35rem;
+    font-weight: 450;
+}
+.simon-game {
+    width: 100%;
+    font-size: 1rem;
     font-weight: 900;
     margin-left: 7.5rem;
 }
-/* .btn{
-    margin-left: 20px;
-    width: 5rem;
-} */
+.start-btn-div button{
+    width: 100px;
+    border: 5px solid orange;
+    border-radius: 10px;
+}
+.start-btn-div{
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+}
 @media(max-width : 535px) {
     .btns {
         height: 9.5rem;

@@ -10,13 +10,16 @@
 </head>
 
 <body>
-    <div class="scoreDiv">
-        <button id="gameStart" type="button" class="btn btn-danger">Start</button>
-        <div class="simonGame">Simon Game</div>
-        <span>Highest Score : 0</span>
+    <div class="game-name"><span>Simon Game</span></div>
+    <div class="level-and-score-div">
+        <div class="highest-score-div" id="highestScore">
+            <span>Highest score : 0</span>
+        </div>
+        <div class="level-div" id="level">
+            <span>Level : 0</span>
+        </div>
     </div>
-        <h2>Press any key to start the game</h2>
-    <div class="btn-container">
+    <div class="btn-container1">
         <div class="vLine-one">
             <div class="btns btn-1" id="btn-1" type="button"></div>
             <div class="btns btn-2" id="btn-2" type="button"></div>
@@ -25,6 +28,9 @@
             <div class="btns btn-3" id="btn-3" type="button"></div>
             <div class="btns btn-4" id="btn-4" type="button"></div>
         </div>
+    </div>
+    <div class="start-btn-div">
+        <button id="gameStart" type="button" class="btn btn-danger">Play</button>
     </div>
     <script src="app.js"></script>
 </body>

@@ -18,7 +18,7 @@ function gameStart(){
 let startBtn = document.querySelector("#gameStart");
 startBtn.addEventListener("click",gameStart);
 document.addEventListener("keypress", gameStart);
-let h2 = document.querySelector("h2");
+let levelDiv = document.querySelector("#level");
 
 const btnFlash = (btn, color) => {
     btn.classList.add(color);
@@ -30,7 +30,7 @@ const levelUp = () => {
     btnFlashAudio.play();
     userSeq = []; // reset userSeq -- user starts guessing from beginning 
     level++;     // upgrade to next level
-    h2.innerText = `Level ${level}`;
+    levelDiv.innerHTML = `<span>Level : ${level}</span>`;
     let randIdx = Math.floor(Math.random() * 4); // random btn class idx generated
     let randBtn = document.querySelector(`.${btns[randIdx]}`); // random btn class generated
     btnFlash(randBtn, "flash"); // random btn flashed
@@ -46,15 +46,15 @@ function isMatch(idx) {
     }
     else {
         gameOverAudio.play();
-        h2.innerHTML = `Game over! Your Score : ${level} <br>  Press any key to start`;
+        levelDiv.innerHTML =  `<span>Game over 😔! Your Score : ${level}</span>`;
         document.querySelector("body").classList.add("gameOverFlash");
         setTimeout(()=>{
             document.querySelector("body").classList.remove("gameOverFlash");
         },150);
         if(level>=highestScore){
             highestScore = level;
-            let span = document.querySelector("span");
-            span.innerHTML = `Highest Score : ${highestScore}`;
+            let highestScoreDiv = document.querySelector("#highestScore");
+            highestScoreDiv.innerHTML = `<span>Highest Score : ${highestScore}</span>`;
         }
         reset();
     }
