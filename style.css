@@ -2,10 +2,13 @@
     text-align: center;
     overflow: auto;
 }
-
+body{
+    background-color: #F0E68C;
+}
 .btn-container1 {
     display: flex;
     justify-content: center;
+    margin-top: 2.5rem;
 }  
 
 .btns {
@@ -78,7 +81,7 @@ span {
 }
 .start-btn-div{
     margin-bottom: .5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 @media(max-width : 535px) {
     .btns {
